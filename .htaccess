@@ -1,0 +1,24 @@
+RewriteEngine On
+#RewriteRule ^user/$ index.php
+#RewriteRule ^user/(.*)$  index.php?page=$1
+
+
+
+RewriteRule ^users$  user_view.php
+RewriteRule ^user-login$ login.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^menu-list$  menu.php
+RewriteRule ^priviledge-list$  priviledge.php
+RewriteRule ^client-login$  admin_client_logger.php
+RewriteRule ^incoming-call$  inboundCall.php
+RewriteRule ^edit-docket-permission$ admin_edit_docket_per.php
+RewriteRule ^docket-list/(.*)$  docketlist.php?page=$1
+RewriteRule ^docket-list$  docketlist.php
+
+RewriteRule ^admin-docket-list$  admin_docket_list.php
+RewriteRule ^admin-docket-list/(.*)$  admin_docket_list.php?page=$1
+#RewriteRule ^admin-docket-edit-199$  admin_edit_docket_per.php
+RewriteRule ^edit-profile$  profile_edit.php
+RewriteRule ^incoming-call-edit$ inboundCall_edit.php
+RewriteRule ^unlock-user$  unlockUser.php
+#######################Admin PANEL URLS###########################
